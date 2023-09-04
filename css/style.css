@@ -21,3 +21,43 @@
     margin: 0;
     padding: 0;
 }
+
+.image__main,
+.image__avatar{
+    max-width: 100%;
+    height: auto;
+}
+
+.image__main{
+    border-radius: .7rem;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: "Outfit";
+    height: 100vh;
+    background-color: var(--very-dark-blue-main);
+}
+
+.card{
+    max-width: 280px;
+    padding: 1.4rem;
+    border-radius: 1rem;
+    background-color: var(--very-dark-blue-card);
+}
+
+.card__description{
+    border: thin solid red;
+}
+
+.card__title{
+    color: var(--white);
+    font-size: var();
+}
+
+.card__author{
+    border: thin solid blue;
+}
