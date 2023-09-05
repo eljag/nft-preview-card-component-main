@@ -59,7 +59,8 @@ body{
 }
 
 .card__description{
-    /* border: thin solid red; */
+    border-bottom: .5px solid var(--very-dark-blue-line);
+    padding-bottom: 1rem;
 }
 
 .card__title{
@@ -98,7 +99,24 @@ body{
     color: var(--soft-blue);
 }
 
-
 .card__author{
-    border: thin solid blue;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding-top: 1rem;
+}
+
+.image__avatar{
+    height: 2.3rem;
+    width: 2.3rem;
+    border: thin solid var(--white);
+    border-radius: 50%;
+}
+
+.author__description{
+    color: var(--soft-blue);
+}
+
+.username{
+    color: var(--white);
 }
