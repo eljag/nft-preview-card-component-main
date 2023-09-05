@@ -15,6 +15,15 @@
     /*TYPOGRAPHY*/
     --font-size: 18px;
 
+    --step--2: clamp(0.78rem, calc(0.77rem + 0.03vw), 0.80rem);
+    --step--1: clamp(0.94rem, calc(0.92rem + 0.11vw), 1.00rem);
+    --step-0: clamp(1.13rem, calc(1.08rem + 0.22vw), 1.25rem);
+    --step-1: clamp(1.35rem, calc(1.28rem + 0.37vw), 1.56rem);
+    --step-2: clamp(1.62rem, calc(1.50rem + 0.58vw), 1.95rem);
+    --step-3: clamp(1.94rem, calc(1.77rem + 0.87vw), 2.44rem);
+    --step-4: clamp(2.33rem, calc(2.08rem + 1.25vw), 3.05rem);
+    --step-5: clamp(2.80rem, calc(2.45rem + 1.77vw), 3.82rem);
+
 }
 
 *{
@@ -50,13 +59,45 @@ body{
 }
 
 .card__description{
-    border: thin solid red;
+    /* border: thin solid red; */
 }
 
 .card__title{
     color: var(--white);
-    font-size: var();
+    font-size: var(--step-1);
+    font-weight: 500;
 }
+
+.card__title,
+.card__copy{
+    margin-bottom: .7rem;
+}
+
+.feature__price,
+.feature__left{
+    display: flex;
+    gap:.5rem;
+}
+
+.card__copy{
+    color: var(--soft-blue);
+    line-height: 1.5;
+    font-weight: 300;
+}
+
+.card__feature{
+    display: flex;
+    justify-content: space-between;
+}
+
+.price{
+    color: var(--cyan);
+}
+
+.left{
+    color: var(--soft-blue);
+}
+
 
 .card__author{
     border: thin solid blue;
