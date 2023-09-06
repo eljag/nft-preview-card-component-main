@@ -5,6 +5,7 @@
     /*PRIMARY COLOURS*/
     --soft-blue:hsl(215, 51%, 70%);
     --cyan:hsl(178, 100%, 50%);
+    --cyan-hover:hsla(178, 100%, 50%, 0.452);
 
     /*NEUTRAL*/
     --very-dark-blue-main:hsl(217, 54%, 11%);
@@ -38,7 +39,9 @@
 }
 
 .image__main{
+    position: relative;
     border-radius: .7rem;
+    margin-bottom: 1rem;
 }
 
 body{
@@ -64,6 +67,7 @@ body{
 }
 
 .card__title{
+    transition: opacity 0.5s ease;
     color: var(--white);
     font-size: var(--step-1);
     font-weight: 500;
@@ -119,4 +123,39 @@ body{
 
 .username{
     color: var(--white);
+}
+
+.card__container-image{
+    position: relative;
+}
+
+.card__background-view{
+    opacity: 0;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    transition: opacity 0.5s ease;
+    margin-bottom:1.3rem;
+    border-radius: .7rem;
+    background-color: var(--cyan-hover);
+}
+
+.card__background-view:hover{
+    opacity:1;
+}
+
+.card__title:hover{
+    cursor: pointer;
+    color: var(--cyan);
+}
+
+.username:hover{
+    cursor: pointer;
+    color: var(--cyan);
 }
